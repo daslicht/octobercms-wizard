@@ -47,7 +47,7 @@ class Plugin extends PluginBase
                 'description' => 'Configure the Wizard Steps',
                 'category'    => 'Marketing',
                 'icon'        => 'icon-cog',
-                'class'       => 'Jumplink\Wizard\Models\settings',
+                'class'       => 'Jumplink\Wizard\Models\Settings',
                 'order'       => 1
             ]
         ];
