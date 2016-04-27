@@ -1,0 +1,32 @@
+test: {{ wizardsettings }}
+<h1>Wizard</h1>
+
+
+<h1>Members</h1>
+<div id="jumplink_wizard">
+    {% for step in wizard_steps %}
+        <h3>{{step.step_title}}</h3>
+        <section>
+           {{step.step_code | raw}}
+        </section>
+    {% endfor %}
+</div>
+
+<!--<div id="example-basic">
+    <h3>Keyboard</h3>
+    <section>
+        <p>Try the keyboard navigation by clicking arrow left or right!</p>
+    </section>
+    <h3>Effects</h3>
+    <section>
+        <p>Wonderful transition effects.</p>
+    </section>
+    <h3>Pager</h3>
+    <section>
+        <p>The next and previous buttons help you to navigate through your content.</p>
+    </section>
+    <h3>Pager</h3>
+    <section>
+        <p>The next and previous buttons help you to navigate through your content.</p>
+    </section>
+</div>-->

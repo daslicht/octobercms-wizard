@@ -1,0 +1,19 @@
+# see: https://octobercms.com/docs/backend/forms#form-field-options
+
+fields:
+    wizard_settings:
+        label: Wizard Name
+        placeholder: Name of the Wizard
+                
+    wizard_steps:
+        label: Wizard Steps Items
+        type: repeater
+        form:
+            fields:
+                wizard_step_title:
+                    label: Wizard Step Name
+                    placeholder: Wizard Step Name
+                wizard_step_code:
+                    label: Code
+                    type: codeeditor
+

@@ -1,0 +1,27 @@
+{
+    "name": "jumplink/wizard",
+    "description": "Wizard Plugin for OctoberCMS",
+    "require-dev": {
+        "ccampbell/chromephp": "^4.1",
+        "raulfraile/ladybug": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Marc Wensauer",
+            "email": "marc@jumplink.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jumplink\\Wizard\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "require": {
+        
+    }
+}
