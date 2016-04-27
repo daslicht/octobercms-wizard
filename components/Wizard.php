@@ -42,7 +42,7 @@ class Wizard extends ComponentBase
          /* Using persisted properties */
          $settings = Settings::instance();
         
-         $this->page['wizardsettings'] = $settings->wizardsettings;
+         $this->page['wizard_name'] = $settings->wizard_name;
          $this->page['wizard_steps'] = $settings->wizard_steps;
          // \ChromePhp::log('onRender:',$settings->wizard_steps);
     }
