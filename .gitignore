@@ -1,5 +1,5 @@
 /assets/vendor
-/vendor/dev
+/vendor
 .DS_Store
 .idea
 .env
