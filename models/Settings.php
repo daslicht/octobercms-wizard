@@ -1,6 +1,6 @@
 <?php namespace Jumplink\Wizard\Models;
 
-use October\Rain\Database\Model;
+use Model;
 
 class Settings extends Model {
     
