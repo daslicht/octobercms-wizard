@@ -1,9 +1,10 @@
 <h1>{{wizard_name}}</h1>
+
 <div id="jumplink_wizard">
     {% for step in wizard_steps %}
-        <h3>{{step.step_title}}</h3>
+        <h3>{{step.wizard_step_title}}</h3>
         <section>
-           {{step.step_code | raw}}
+           {{step.wizard_step_code | raw}}
         </section>
     {% endfor %}
 </div>
