@@ -44,6 +44,7 @@ class Wizard extends ComponentBase
         
          $this->page['wizard_name'] = $settings->wizard_name;
          $this->page['wizard_steps'] = $settings->wizard_steps;
+         $this->page['wizard_javascript'] = $settings->wizard_javascript;
          // \ChromePhp::log('onRender:',$settings->wizard_steps);
     }
     
@@ -56,10 +57,11 @@ class Wizard extends ComponentBase
     {
         $settings = Settings::instance();
        // \ChromePhp::log('onRun, Wizard:', Settings::get('wizardsettings')); 
-       // \ChromePhp::log('my_tab2:',$settings->my_tab2);
+       // \ChromePhp::log('wizard_javascript:',$settings->wizard_javascript);
         //ladybug_dump($this);
+        
         $this->addJs('/plugins/jumplink/wizard/assets/vendor/jquery.steps/build/jquery.steps.min.js');
-        $this->addJs('/plugins/jumplink/wizard/components/wizard.js');
+       // $this->addJs('/plugins/jumplink/wizard/components/wizard.js');
         $this->addCss('/plugins/jumplink/wizard/assets/jquery.steps.css');
 
     }

@@ -4,16 +4,30 @@ fields:
     wizard_name:
         label: Wizard Name
         placeholder: Name of the Wizard
-                
-    wizard_steps:
-        label: Wizard Steps Items
-        type: repeater
-        form:
-            fields:
-                wizard_step_title:
-                    label: Wizard Step Name
-                    placeholder: Wizard Step Name
-                wizard_step_code:
-                    label: Code
-                    type: codeeditor
+
+tabs:
+    stretch: true
+    defaultTab: javascript
+    cssClass: jumplink_wizard_css
+    fields: 
+        wizard_javascript:
+            tab: javascipt
+            label: Wizard Javascript (called after dom is ready, id="jumplink_wizard")    
+            type: codeeditor
+            language: javascript
+            size: giant
+            
+        wizard_steps:
+            tab: html
+            label: Wizard Steps Items
+            type: repeater
+            form:
+                fields:
+                    wizard_step_title:
+                        label: Wizard Step Name
+                        placeholder: Wizard Step Name
+                    wizard_step_code:
+                        label: Code (html)
+                        type: codeeditor
+                        language: html
 

@@ -1,10 +1,19 @@
 <h1>{{wizard_name}}</h1>
 
-<div id="jumplink_wizard">
+<form id="jumplink_wizard" action="#">
     {% for step in wizard_steps %}
         <h3>{{step.wizard_step_title}}</h3>
         <section>
            {{step.wizard_step_code | raw}}
         </section>
     {% endfor %}
-</div>
+</form>
+
+<script>
+{#
+    wizard_javascript (see fields.yaml ) 
+#}
+document.addEventListener("DOMContentLoaded", function(event) {
+    {{ wizard_javascript | raw }}
+});
+</script>
